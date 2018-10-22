@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>HEXO + Github 블로그 간단 정리 | ZO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="hexo">
+    
+    <meta name="description" content="Hexo 요약사전준비 Node.js 설치 Git 설치 Github repository 생성 유저명.github.io 로 repository 생성     HEXO hexo 설치(어디서든)&amp;gt; npm install -g hexo-cli&amp;nbsp;  hexo 로 블로그 기반 폴더 초기화(사용할 폴더의 상위폴더에서)상위폴더&amp;gt; hexo init 폴더명&amp;nb">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HEXO + Github 블로그 간단 정리">
+<meta property="og:url" content="https://zo-han.github.io/2018/10/04/2018-10-04-hexo-command/index.html">
+<meta property="og:site_name" content="ZO">
+<meta property="og:description" content="Hexo 요약사전준비 Node.js 설치 Git 설치 Github repository 생성 유저명.github.io 로 repository 생성     HEXO hexo 설치(어디서든)&amp;gt; npm install -g hexo-cli&amp;nbsp;  hexo 로 블로그 기반 폴더 초기화(사용할 폴더의 상위폴더에서)상위폴더&amp;gt; hexo init 폴더명&amp;nb">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-10-08T22:15:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HEXO + Github 블로그 간단 정리">
+<meta name="twitter:description" content="Hexo 요약사전준비 Node.js 설치 Git 설치 Github repository 생성 유저명.github.io 로 repository 생성     HEXO hexo 설치(어디서든)&amp;gt; npm install -g hexo-cli&amp;nbsp;  hexo 로 블로그 기반 폴더 초기화(사용할 폴더의 상위폴더에서)상위폴더&amp;gt; hexo init 폴더명&amp;nb">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Flow</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/">Programming</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Algorithm/">Algorithm</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Cs/">Cs</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Java/">Java</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/JavaScript/">JavaScript</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Review/">Review</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Review/Book/">Book</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/TIL/">TIL</a></li></ul>
+                                    
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="https://github.com/zo-han">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Hexo/">Hexo</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-2018-10-04-hexo-command" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        HEXO + Github 블로그 간단 정리
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/10/04/2018-10-04-hexo-command/" class="article-date">
+            <time datetime="2018-10-04T08:11:35.000Z" itemprop="datePublished">2018-10-04</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/hexo/">hexo</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h1 id="Hexo-요약"><a href="#Hexo-요약" class="headerlink" title="Hexo 요약"></a>Hexo 요약</h1><h4 id="사전준비"><a href="#사전준비" class="headerlink" title="사전준비"></a>사전준비</h4><ol>
+<li>Node.js 설치</li>
+<li>Git 설치</li>
+<li>Github repository 생성<blockquote>
+<p>유저명.github.io 로 repository 생성</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h4 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h4><ol>
+<li><p>hexo 설치(어디서든)<br><code>&gt; npm install -g hexo-cli</code><br>&nbsp;</p>
+</li>
+<li><p>hexo 로 블로그 기반 폴더 초기화(사용할 폴더의 상위폴더에서)<br><code>상위폴더&gt; hexo init 폴더명</code><br>&nbsp;</p>
+</li>
+<li><p>폴더 이동<br><code>상위폴더&gt; cd 폴더명</code><br>&nbsp;</p>
+</li>
+<li><p>Node Package Manager 로 hexo에 필요한 것 설치<br><code>블로그&gt; npm install</code><br>&nbsp;</p>
+</li>
+<li><p>Hexo 테마 설치 (hueman 테마 - 블로그/themes/hueman 에 복사된다.)<br><code>블로그&gt; git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman</code><br>&nbsp;</p>
+</li>
+<li><p>블로그/_config.yml 을 열어 수정한다. (themes/hueman/_config.yml 과는 다름)<br><code>theme: hueman     #기본테마는 landscape로 되어있다.</code><br>&nbsp;</p>
+</li>
+<li><p>블로그/themes/hueman/_config.yml.example 파일명 변경<br><code>_config.yml.example -&gt; _config.yml</code><br>&nbsp;</p>
+</li>
+<li><p>github에 배포할 것이므로 deploye-git 설치<br><code>블로그&gt; npm install hexo-deployer-git --save</code><br>&nbsp;</p>
+</li>
+<li><p>hexo 정적 블로그 생성(html, css, js 등등)<br><code>블로그&gt; hexo generate</code><br>&nbsp;</p>
+</li>
+<li><p>깃헙에 배포하기 전에 로컬에서 테스트 하려면(생략가능)<br><code>hexo server</code><br><code>http://localhost:4000 으로 접속하여 테스트</code><br>&nbsp;</p>
+</li>
+<li><p>Github에 배포<br><code>블로그&gt; hexo deploy</code><br>&nbsp;</p>
+</li>
+<li><p>6+7 위 두 줄을 한번에 하려면<br><code>블로그&gt; hexo g -d</code><br>&nbsp;</p>
+</li>
+</ol>
+<hr>
+<p>while(살아있음) {<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;포스트 제목&quot;</span><br><span class="line">md파일 열어서 포스트 작성</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br><span class="line">http://localhost:4000 으로 접속하여 테스트</span><br><span class="line">Ctrl + C 로 종료</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>}</p>
+<p>&nbsp;<br>&nbsp;</p>
+<h4 id="카테고리-설정"><a href="#카테고리-설정" class="headerlink" title="카테고리 설정"></a>카테고리 설정</h4><p>포스트 작성시 헤더 부분 (테마별로 다를 수 있다. 포스팅 썸네일도 추가할 수 있다.)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: HEXO + Github 블로그 간단 정리</span><br><span class="line">categories:</span><br><span class="line">  - 상위</span><br><span class="line">  - 하위1</span><br><span class="line">  - 하위2</span><br><span class="line">tags:</span><br><span class="line">date: 2018-10-04 17:11:35</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>이렇게 포스트 작성하여 생성후 배포(hexo g -d)하면<br>아래처럼 블로그의 카테고리가 만들어진다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">상위</span><br><span class="line">    -하위1</span><br><span class="line">    -하위2</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;<br>&nbsp;</p>
+<h3 id="주의사항"><a href="#주의사항" class="headerlink" title="==주의사항=="></a>==주의사항==</h3><p>hexo 테마의 경우 깃헙에 배포를 해도 정적파일만 생성해서 올릴 뿐이므로,<br>블로그 테마의 설정은 올라가지 않는다.<br>따로 저장소를 추가로 만들어 블로그 설정을 백업하는 것이 좋다.<br>(타 블로그에서 hexo 백업 검색하면 submodule 사용하는 방법도 나온다.)<br>jekyll때는 그런거 없이 그냥 다 올라가서 폴더구조가 더 헷갈렸던것 같기도 하고…<br><del>나중에 귀찮아서 jekyll로 갈아탈지도</del></p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+<p><del>카테고리에 대한 잡설</del><br>네이버 블로그를 만들었을 때는 카테고리 항목을 미리 만들어놓고<br>그에 맞는 포스트를 작성했었는데,<br>구글 블로거 라든지 외국 블로그는 포스팅에 카테고리를 저장해야 만들어진다.<br>빈 카테고리를 용납하지 않는건지…<br>조승연 작가의 책 중 ‘플루언트’가 생각난다.<br>동양은 수렴형 사고, 서양은 발산형 사고<br>전체에서 나 로 수렴하는 동양은 제일 큰 범주부터 생각을 하고,<br>서양은 나로부터 뻗어나가는 사고방식의 차이?</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://zo-han.github.io/2018/10/04/2018-10-04-hexo-command/" data-id="cjnkjgklq000gkgv3yaqruut5" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/zo-han" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/10/09/2018-10-09-til/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            2018-10-09 TIL
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/10/02/2018-10-02-paging-debugging-trace/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">오늘 공부</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Algorithm/">Algorithm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Cs/">Cs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Java/">Java</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Review/">Review</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Review/Book/">Book</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/TIL/">TIL</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TIL/">TIL</a></p>
+                            <p class="item-title"><a href="/2018/10/23/2018-10-22-dast/" class="title">Think DataStructure with Java</a></p>
+                            <p class="item-date"><time datetime="2018-10-22T16:43:42.000Z" itemprop="datePublished">2018-10-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/23/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2018-10-22T16:37:41.893Z" itemprop="datePublished">2018-10-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TIL/">TIL</a></p>
+                            <p class="item-title"><a href="/2018/10/09/2018-10-09-til/" class="title">2018-10-09 TIL</a></p>
+                            <p class="item-date"><time datetime="2018-10-09T10:59:34.000Z" itemprop="datePublished">2018-10-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/10/04/2018-10-04-hexo-command/" class="title">HEXO + Github 블로그 간단 정리</a></p>
+                            <p class="item-date"><time datetime="2018-10-04T08:11:35.000Z" itemprop="datePublished">2018-10-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TIL/">TIL</a></p>
+                            <p class="item-title"><a href="/2018/10/02/2018-10-02-paging-debugging-trace/" class="title">오늘 공부</a></p>
+                            <p class="item-date"><time datetime="2018-10-01T17:20:26.000Z" itemprop="datePublished">2018-10-02</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/algorithm/" style="font-size: 10px;">algorithm</a> <a href="/tags/book/" style="font-size: 10px;">book</a> <a href="/tags/cs/" style="font-size: 10px;">cs</a> <a href="/tags/etc/" style="font-size: 10px;">etc</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/review/" style="font-size: 10px;">review</a> <a href="/tags/til/" style="font-size: 20px;">til</a> <a href="/tags/til-ds/" style="font-size: 10px;">til, ds</a> <a href="/tags/til-javascript/" style="font-size: 10px;">til, javascript</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/">book</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cs/">cs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/etc/">etc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/review/">review</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/til/">til</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/til-ds/">til, ds</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/til-javascript/">til, javascript</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/eomjinyoung">Eom</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Kwanyoung Han</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'zo-han';
+    
+    
+    var disqus_url = 'https://zo-han.github.io/2018/10/04/2018-10-04-hexo-command/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
